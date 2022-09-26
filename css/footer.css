@@ -1,0 +1,151 @@
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: rgba(0, 0, 0, .04);
+}
+.footer-details{
+    display: flex;
+    padding: 0 50px;
+    gap: 90px;
+}
+
+.footer-contact,
+.footer-link,
+.footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #454545;
+}
+
+.footer-contact h2,
+.footer-link h2,
+.footer-newsletter h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #78A3EB;
+}
+
+.footer-contact h2::after,
+.footer-link h2::after,
+.footer-newsletter h2::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #FBA3EB;
+}
+
+.footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #454545;
+    transition: .3s;
+}
+
+.footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #78A3EB;
+}
+
+.footer-link a:hover {
+    color: #78A3EB;
+    letter-spacing: 1px;
+}
+
+.footer-contact p i {
+    width: 25px;
+    color: #78A3EB;
+    padding: 10px 0;
+}
+
+.footer-social {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #78A3EB;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-social a:hover {
+    background: #FBA3EB;
+}
+
+.footer-social a:last-child {
+    margin: 0;
+}
+
+.footer-newsletter .form {
+    position: relative;
+    width: 100%;
+}
+
+.footer-newsletter input {
+    height: 60px;
+    background: transparent;
+    border: 1px solid #78A3EB;
+    border-radius: 5px;
+}
+
+.footer-newsletter .btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 44px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.copyright {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.copyright p {
+    margin: 0;
+    display: inline-block;
+    color: #454545;
+}
+
+.copyright p a {
+    color: #78A3EB;
+}
+
+.copyright p a:hover {
+    color: #FBA3EB;
+}
+
+@media (max-width: 600px) {
+    .footer-details{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

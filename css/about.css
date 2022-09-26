@@ -1,0 +1,38 @@
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 45px 0;
+    flex-wrap: wrap;
+}
+
+.about .about-img img {
+    position: relative;
+    border-radius: 15px;
+}
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.about .about-img {
+    margin-bottom: 30px;
+}
+
+.about-text{
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .about .about-content {
+        width: 100%;
+        margin: 20px;
+    }
+
+}
+
+
+

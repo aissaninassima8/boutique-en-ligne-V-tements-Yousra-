@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Vêtements Yousra</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="boutique en ligne de tablier d'école" name="keywords">
+        <meta content="boutique en ligne de tablier d'école" name="description">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+         <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+       <header class="banner">
+        <a href="../index.html" class="navbar-title">Vêtements<span> Yousra</span></a>
+        <nav class="header-main">    
+            <ul>
+                <li class="nav-item"><a href="../index.html" class="nav-link ">Accueil</a></li>
+                <li class="nav-item"><a href="produits.html" class="nav-link">Produits</a></li>
+                <li class="nav-item"><a href="apropos.html" class="nav-link">A proros</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav> 
+        <div class="header-utility">      
+            <a><i class="fa-solid fa-magnifying-glass nav-link"></i></a>
+            <a href="connexion.html"><i class="fa-solid fa-circle-user nav-link active"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping nav-link"></i></a>
+        </div>
+        <a class="bars"><i class="fa-solid fa-bars"></i></a>
+    </header>
+
+  <!-- Page Header Start -->
+  <div class="page-header">
+            <h2>Bienvenue </h2>
+            <div>
+                <a href="../index.html"><i class="fas fa-home"></i></a>
+                <a href="inscription.html">inscription</a>
+            </div>
+</div>
+<!-- Page Header End -->
+<main class="FormulInsc">
+    <div class="mainConnexion-part">
+         <h2>Formulaire d'inscription </h2>
+         <form>
+                  <div class="form-info">
+                      <label class="form-label" for="name">nom </label>
+                      <input class="form-input" type="text" id="name" name="name"  required autofocus>
+                  </div>
+                  <div class="form-info">
+                      <label class="form-label" for="surname">prénom</label>
+                      <input class="form-input" type="text" id="surname" name="surname" required >
+                  </div>
+            
+            <div class="form-info">
+                <label class="form-label" for="genre">genre </label>
+                <div id="genre">
+                    <div class="form-valide" >
+                        <label class="form-label"></label>
+                        <input type="radio" class="form-check" name="optradio">homme
+                        
+                    </div>
+                    <div class="form-valide" >
+                        <label class="form-label"> </label>
+                        <input type="radio" class="form-check" name="optradio">femme
+                       
+                    </div>
+                    <div class="form-valide" >
+                        <label class="form-label"> </label>
+                        <input type="radio" class="form-check" name="optradio" >autre 
+                    </div>
+                </div>
+            </div>
+            <div class="form-info">
+                 <label class="form-label" for="datenaiss">date de naissance</label>
+                 <input class="form-input" type="date" id="datenaiss" name="datenaiss" required >
+            </div>
+             <div class="form-info">
+                 <label class="form-label" for="NumTel">Numéro du téléphone</label>
+                 <input class="form-input" type="tel" id="NumTel" name="NumTel">      
+             </div>
+             <div class="form-info">
+                 <label class="form-label" for="email">Adresse e-mail </label>
+                 <input class="form-input" type="email" id="email" name="email" placeholder="name@example.com" required >    
+             </div>
+             <div class="form-password">
+                  <div class="form-info">
+                      <label class="form-label" for="password ">mot de passe</label>
+                      <input type="password" id="password" name="password" class="form-input" required >
+                  </div>
+                  <div class="form-info">
+                      <label class="form-label" for="CONFpassword">Confirmer le mot de passe</label>
+                      <input type="password" id="CONFpassword" name="CONFpassword" class="form-input"required > 
+                  </div>       
+             </div>
+            <div class="form-valide">
+                  <input class="form-check" type="checkbox" id="accepter" name="accepter">
+                  <label  class="form-label"class="form-label" for="accepter">J’accepte les Conditions d’utilisation et l’Avis de confidentialité.</label>                         
+            </div>
+          <button type="submit" class="custom-btn">S'inscrire</button>
+          </form>
+
+          <div class="part-insc"> 
+                  <p >Vous avez déja un compte?</p>    
+                  <a class="custom-btn" href="connexion.html" >Se connecter</a>
+          </div>
+     </div>   
+</main>
+       <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-details">
+            <div class="footer-contact">
+                <h2>Adresse</h2>
+                <p><i class="fa fa-map-marker-alt"></i>Lot 65 rue chaibe ancien ain naadja Alger</p>
+                <p><i class="fa fa-phone-alt"></i>0560425029</p>
+                <p><i class="fa fa-envelope"></i>vetmentYousra@gmail.com</p>
+                <div class="footer-social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-link">
+                <h2>Liens</h2>
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+            </div>
+        </div>
+        <div class="copyright">
+                <p>Copyright &copy; <a href="#">Vetements Yousra</a>, All Right Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="../js/main.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    padding: 20px;
+}
+.header-main ul{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+.header-main ,.header-utility{
+        align-self: center;
+    }
+    
+.nav-link{
+        padding: 10px 10px 8px 10px;
+        color: #666666;
+        font-size: 18px;
+        font-weight: 600;
+    }
+.nav-link:hover{
+    color: #78A3EB;
+}
+
+.navbar-title{
+    color: #78A3EB;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    }
+.navbar-title span {
+        color: #FBA3EB;
+    }   
+.navbar-title:hover {
+        color: #78A3EB;
+    }
+.navbar-title:hover span {
+        color: #78A3EB;
+    }
+
+.bars{
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    .header-utility,.header-main,.navbar-title{
+       display: none;
+    }
+    .bars{
+       display: block;
+    }
+    .header-main ul ,.banner{
+       flex-direction: column;
+       gap: 5px;
+    }
+   .banner{
+       width: 100%;
+       position: absolute;  
+       z-index: 1090;
+       box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 15%); 
+       background :rgb(18, 61, 99);
+       padding-bottom: 15px;
+   }
+   .nav-link{
+   text-align: center;
+   display: block;  
+   color: white;
+   font-size: 14px;
+   }
+   .navbar-title{
+    font-size: 20px;
+    text-align: center;
+   }
+}

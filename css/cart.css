@@ -1,0 +1,272 @@
+.panier {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+    padding: 1rem 0;
+  }
+  aside {
+    width: 20%;
+    margin-right: 20px;
+  }
+  .main-container{
+    width: 70%;
+    margin:0 10px;
+  }
+  .price-quantity{
+    display: flex;
+    width: 45%;
+  }
+  .price-quantity-title{
+    width:15%;
+  }
+  .price-quantity-title-subtotal{
+    width:15%;
+    text-align: end;
+  }
+  img,
+  .main-container-labels,
+  .product {
+    width: 100%;
+  }
+  
+  .price:after,
+  .subtotal:after,
+  .subtotal-value:after,
+  .total-value:after,
+  .promo-value:after{
+    content: 'DA';
+  }
+  .main-title{
+    color: #4e5e61;
+    margin: 20px 0 ;
+    text-align: center;
+  }
+  .quantity-field,
+  .btn-dec,
+  .btn-inc {
+    background-color: transparent;
+    border: 1px solid #7c7e7e;
+    color: #7c7e7e;
+    border-radius: 4px;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 2px;
+    width: 2rem;
+    min-height: 1.5rem;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .main-container,
+  aside {
+    padding: 0 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3125rem;
+  }
+  
+  .main-container-labels {
+    display: flex;
+    border-top: 1px solid #7c7e7e;
+    border-bottom: 1px solid #7c7e7e;
+    margin-top: 1.625rem;
+    color: #111;
+    padding: 0.625rem 0;
+    font-size: 1.3em;
+  }
+  
+  li.price:before,
+  li.subtotal:before {
+    content: '';
+  }
+  .fa-heart{
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 8px;
+  }
+  .btn-aimee{
+    background-color: transparent;
+  }
+  .fa-heart:hover{
+    color: red;
+    border-color: red;
+  }
+  .product-title{
+    display: flex;
+    justify-content: space-between;
+  }
+  .item {
+    width: 55%;
+    display: flex;
+  }
+  .quantity{
+    display: flex;
+    max-height: 10px;
+  }
+  .price,
+  .quantity,
+  .subtotal {
+    width: 100%
+  }
+  
+  .subtotal {
+    text-align: right;
+  }
+  
+  .remove {
+    bottom: 1.125rem;
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+  
+  .checkout-cta {
+    width: 100%;
+    background-color: white;
+    color: #7c7e7e;
+    padding: 10px;
+    border-radius:3px;
+    
+  }
+  .btn{
+    background-color: transparent;
+    display: block;
+    border: 1px solid #7c7e7e;
+    color:  #7c7e7e;
+    padding: 10px;
+    border-radius:5px ;
+    font-size: 1.25em;
+  }
+  .btn:hover ,
+  .btn-dec,
+  .btn-inc{
+    background-color: #7c7e7e;
+    color: white;
+  }
+  .item-heading {
+    padding-left: 4.375rem;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #7c7e7e;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  .product-image {
+    width: 35%;
+  }
+  
+  .product-details {
+    width: 65%;
+  }
+  
+  .product-frame {
+    border: 1px solid #7c7e7e;
+    
+  }
+  .product-frame:hover{
+    box-shadow:2px 2px 4px #000000;
+  }
+  .product-details {
+    padding: 0 1.5rem;
+  }
+  
+  
+  /************************************************************************************/
+  
+  
+  .summary { 
+    border: 1px solid #7c7e7e;
+    padding: 1rem;
+    border-radius: 3px;
+    background-color:#7c7e7e;
+  }
+  .summary:hover{
+    box-shadow:2px 2px 4px #7c7e7e;
+  }
+  
+  
+  
+  .summary-total {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    border-top: 1px solid #7c7e7e;
+    border-bottom: 1px solid #7c7e7e;
+    clear: both;
+    margin: 2rem 0;
+    overflow: hidden;
+    padding: 0.5rem 0;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+  .panier{
+      flex-direction: column;
+  }
+  .product {
+    flex-direction: column;
+  }
+  .price-quantity{
+    align-items: center;
+  }
+  .main-container{
+    margin: 0;
+   }
+   
+  .price, 
+  .quantity,
+   .subtotal,
+    aside,
+    .main-container,
+    .summary,
+    .item{
+      width: 100%;
+    }
+    .main-container-labels {
+      display: none;
+    }
+    .item {
+      margin-bottom: 1rem;
+    }
+    .product-image {
+      width: 40%;
+    }
+    .product-details {
+      width: 60%;
+    }
+    
+    .summary {
+      margin-top: 1.25rem;
+      position: relative;
+    }
+  }
+  
+  @media screen and (min-width: 650px) and (max-width: 960px) {
+   .main-container{
+    margin: 0;
+   }
+    .panier{
+      flex-direction: column;
+    }
+    aside,
+    .main-container,
+    .summary,
+    .item
+    {
+      width: 100%;
+    }
+  
+    .summary{
+      position:relative;
+    }
+  }
+  
+  
